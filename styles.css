@@ -13,12 +13,29 @@ header {
     background-image: url(img/fondo_header3.jpg);
     background-size: cover;
     background-position: center;
-    color: #083c77;
+    color: #ffefcd;
     padding: 20px;
     text-align: center; /* Para centrar la barra de búsqueda */
     margin-bottom: 10px;
+
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de opacidad */
+    z-index: 1;
+  }
+
+nav, .Encabezado, ul.menu {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima del overlay */
+    color: white; /* Ajusta el color del texto */
+    text-align: center;
+}
 
 .Encabezado {
     margin-top: 100px;
@@ -35,13 +52,13 @@ header {
 
 
 .boton-seguir{
-    color: #e09132;
+    color: #ffa12d;
     font-weight:bolder;
     margin-top: 50px;
     text-align: center;
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: 23px;
     cursor: pointer;
 }
 
@@ -76,7 +93,7 @@ nav {
 }
 
 .fronteras {
-    color: #083c77; /* Verde oscuro */
+    color: #ffa12d; /* Verde oscuro */
 }
 
 /* Barra de búsqueda */
@@ -131,11 +148,11 @@ hr {
 }
 
 .menu li a {
-    color: #083c77;
+    color: #ffefcd;
     text-decoration: none;
     font-size: 16px;
 }
 
 .menu li a:hover{
-    color: chocolate;
+    color: #ffa12d;
 }
