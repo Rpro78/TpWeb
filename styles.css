@@ -6,16 +6,19 @@
 
 body {
     font-family: 'poppins', sans-serif;
-    background-color: #012815;
+    background-color: white;
 }
 
 header {
-    background-color: #6e6e6e;
-    color: #ffefcd;
+    background-image: url(img/fondo_header3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #083c77;
     padding: 20px;
     text-align: center; /* Para centrar la barra de búsqueda */
     margin-bottom: 10px;
 }
+
 
 .Encabezado {
     margin-top: 100px;
@@ -23,6 +26,7 @@ header {
 
 .Encabezado h1{
     margin-bottom: 70px;
+    font-size: 50px;
 }
 
 .Encabezado p{
@@ -47,23 +51,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    height: 100px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    margin-left: 20px;
-    position: absolute;
+    margin-left: 10px;
     left: 20;
     top: 30px;
 }
+
+.logo-img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 160px;
+    height: 180px;
+}
+
 
 .sin {
     color: #ffefcd;
 }
 
 .fronteras {
-    color: #012815; /* Verde oscuro */
+    color: #083c77; /* Verde oscuro */
 }
 
 /* Barra de búsqueda */
@@ -74,7 +87,7 @@ nav {
     padding: 5px 10px;
     border-radius: 50px;
     width: 50%; /* Anchura fija para centrarla */
-    margin: 0 auto;
+    margin: auto auto auto 150px;
 }
 
 .search-container input[type="text"] {
@@ -95,15 +108,14 @@ nav {
 }
 
 .search-container button:hover {
-    color: #012815; /* Cambia el color de la lupa al verde oscuro */
+    color: green; /* Cambia el color de la lupa al verde oscuro */
 }
 
 /* Línea separadora */
 hr {
     border: 0;
-    height: 1px;
+    height: 2px;
     background-color: #ccc;
-    margin: 10px 0;
 }
 
 /* Estilo para el menú */
@@ -119,7 +131,11 @@ hr {
 }
 
 .menu li a {
-    color: #ffefcd;
+    color: #083c77;
     text-decoration: none;
     font-size: 16px;
+}
+
+.menu li a:hover{
+    color: chocolate;
 }
