@@ -8,47 +8,140 @@
     <!-- Font Awesome para el icono de la lupa -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="overlay"></div>
-        <nav>
-            <!-- Logo a la izquierda -->
-             <div class="logo-img">
-                <img src="img/sin fronteras.png" alt="">
-             </div>
-            <div class="logo">
-                <span class="sin">Sin</span><span class="fronteras">Fronteras</span>
-            </div>
-            <!-- Barra de búsqueda centrada -->
-            <div class="search-container">
-                <input type="text" placeholder="Search your option">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-        </nav>
-        <!-- Línea separadora -->
-        <hr>
-        <!-- Categorías debajo de la barra de búsqueda -->
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Agencias</a></li>
-            <li><a href="#">Noticias</a></li>
-        </ul>
-
-        <div class="Encabezado">
-            <h1>Cual sera tu siguiente destino?</h1>
-            <p>Cada rincón del planeta tiene una historia que contar, paisajes que asombrar y culturas que descubrir <p> Elige tu próximo destino y deja que la aventura te sorprenda.</p></p>
-            <button class="boton-seguir">Let's Go...</button>
+<header>
+    <div class="overlay"></div>
+    <nav>
+        <!-- Logo a la izquierda -->
+        <div class="logo-img">
+            <img src="img/sin fronteras.png" alt="">
         </div>
-    </header>
+        <div class="logo">
+            <span class="sin">Sin</span><span class="fronteras">Fronteras</span>
+        </div>
+        <!-- Barra de búsqueda centrada -->
+        <div class="search-container">
+            <input type="text" placeholder="Search your option">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </nav>
+    <!-- Línea separadora -->
+    <hr>
+    <!-- Categorías debajo de la barra de búsqueda -->
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#">Agencias</a></li>
+        <li><a href="#">Noticias</a></li>
+    </ul>
 
+    <div class="Encabezado">
+        <h1>Cual sera tu siguiente destino?</h1>
+        <p>Cada rincón del planeta tiene una historia que contar, paisajes que asombrar y culturas que descubrir <p> Elige tu próximo destino y deja que la aventura te sorprenda.</p></p>
+        <button class="boton-seguir">Let's Go...</button>
+    </div>
+</header>
+
+<!-- Section for Destinations -->
+<section id="destinos">
+    <h2>Destinos</h2>
+    <div class="destinos-grid">
+        <a href="#montana"><div class="destino-card">Montaña</div></a>
+        <a href="#playa"><div class="destino-card">Playa</div></a>
+        <a href="#nieve"><div class="destino-card">Nieve</div></a>
+        <a href="#ciudad"><div class="destino-card">Ciudad</div></a>
+    </div>
+
+    <!-- Individual Sections for each Destination -->
+    <section id="montana">
+        <h3>Montaña</h3>
+        <p>Contenido sobre destinos de montaña.</p>
+    </section>
+
+    <section id="playa">
+        <h3>Playa</h3>
+        <p>Contenido sobre destinos de playa.</p>
+    </section>
+
+    <section id="nieve">
+        <h3>Nieve</h3>
+        <p>Contenido sobre destinos con nieve.</p>
+    </section>
+
+    <section id="ciudad">
+        <h3>Ciudad</h3>
+        <p>Contenido sobre destinos en la ciudad.</p>
+    </section>
+</section>
+
+
+<section class="seccion-noticias">
+    <h2>Noticias</h2>
+    <div class="rejilla-noticias">
+        <div class="tarjeta-noticia">
+            <img src="img/news1.jpg" alt="Noticia 1">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+
+        <div class="tarjeta-noticia">
+            <img src="img/news2.jpg" alt="Noticia 2">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+
+        <div class="tarjeta-noticia">
+            <img src="img/news3.jpg" alt="Noticia 3">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+
+        <div class="tarjeta-noticia">
+            <img src="img/news4.jpg" alt="Noticia 4">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+
+        <div class="tarjeta-noticia">
+            <img src="img/news5.jpg" alt="Noticia 5">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+
+        <div class="tarjeta-noticia">
+            <img src="img/news6.jpg" alt="Noticia 6">
+            <div class="contenido-tarjeta">
+                <h3>Las doradas arenas de Florida y California</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec auctor purus.</p>
+                <a href="#">Viaje en solitario</a> por Adam Smith
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>
+
 
 
 
