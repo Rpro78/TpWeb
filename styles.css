@@ -13,38 +13,59 @@ header {
     background-image: url(img/fondo_header3.jpg);
     background-size: cover;
     background-position: center;
-    color: #083c77;
+    color: #ffefcd;
     padding: 20px;
-    text-align: center; /* Para centrar la barra de búsqueda */
+    text-align: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
+h2{
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+nav, .Encabezado, ul.menu {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
 
 .Encabezado {
     margin-top: 100px;
 }
 
-.Encabezado h1{
+.Encabezado h1 {
     margin-bottom: 70px;
     font-size: 50px;
 }
 
-.Encabezado p{
+.Encabezado p {
     margin-top: 20px;
 }
 
-
-.boton-seguir{
-    color: #e09132;
-    font-weight:bolder;
+.boton-seguir {
+    color: #ffa12d;
+    font-weight: bolder;
     margin-top: 50px;
     text-align: center;
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: 23px;
     cursor: pointer;
 }
-
 
 nav {
     display: flex;
@@ -62,7 +83,7 @@ nav {
     top: 30px;
 }
 
-.logo-img{
+.logo-img {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -70,13 +91,12 @@ nav {
     height: 180px;
 }
 
-
 .sin {
     color: #ffefcd;
 }
 
 .fronteras {
-    color: #083c77; /* Verde oscuro */
+    color: #ffa12d;
 }
 
 /* Barra de búsqueda */
@@ -86,7 +106,7 @@ nav {
     background-color: white;
     padding: 5px 10px;
     border-radius: 50px;
-    width: 50%; /* Anchura fija para centrarla */
+    width: 50%;
     margin: auto auto auto 150px;
 }
 
@@ -108,14 +128,14 @@ nav {
 }
 
 .search-container button:hover {
-    color: green; /* Cambia el color de la lupa al verde oscuro */
+    color: green;
 }
 
 /* Línea separadora */
 hr {
     border: 0;
     height: 2px;
-    background-color: #ccc;
+    background-color:white;
 }
 
 /* Estilo para el menú */
@@ -127,15 +147,111 @@ hr {
 }
 
 .menu li {
-    margin: 0 100px; /* Aumenta el margen entre los elementos */
+    margin: 0 100px;
 }
 
 .menu li a {
-    color: #083c77;
+    color: #ffefcd;
     text-decoration: none;
     font-size: 16px;
 }
 
-.menu li a:hover{
-    color: chocolate;
+.menu li a:hover {
+    color: #ffa12d;
 }
+
+
+/* Destinos grid */
+.destinos-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.destino-card {
+    margin-top: 30px;
+    width: 200px;
+    height: 210px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.destino-card:hover {
+    background-color: #ffa12d;
+}
+
+/* Individual destination sections */
+section {
+    padding: 20px;
+    margin-left: 40px;
+}
+
+section h3 {
+    font-size: 25px;
+    color: #ffa12d;
+}
+
+section p {
+    font-size: 18px;
+    color: #333;
+}
+
+.seccion-noticias {
+    padding: 40px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.rejilla-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta-noticia {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-noticia:hover {
+    background-color: #f1f5f7;
+}
+
+.tarjeta-noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 20px;
+    text-align: left;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contenido-tarjeta p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contenido-tarjeta a {
+    color: #ffa12d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
