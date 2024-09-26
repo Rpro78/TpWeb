@@ -290,7 +290,7 @@ section p {
 
 /* Columna de tarjetas a la izquierda */
 .tarjetas-agencia {
-    width: 50%; /* Ajusta el ancho según tu preferencia */
+    width: 60%; /* Ajusta el ancho según tu preferencia */
     display: flex;
     flex-direction: column;
     gap: 20px;
