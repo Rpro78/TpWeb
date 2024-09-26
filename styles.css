@@ -169,6 +169,10 @@ hr {
     text-decoration: none;
 }
 
+.destinos-grid a{
+    text-decoration: none;
+}
+
 .destino-card {
     margin-top: 30px;
     width: 200px;
@@ -181,10 +185,6 @@ hr {
     font-size: 24px;
     cursor: pointer;
     border-radius: 10px;
-}
-
-.destino-card:hover {
-    background-color: #ffa12d;
 }
 
 /* Individual destination sections */
@@ -254,4 +254,127 @@ section p {
     font-weight: 600;
 }
 
+#montania{
+    background-image: url(img/montania.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+#playa{
+    background-image: url(img/playa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#nieve{
+    background-image: url(img/nieve.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ciudad{
+    background-image: url(img/ciudad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destinos{
+    margin-top: 50px;
+}
+
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Columna de tarjetas a la izquierda */
+.tarjetas-agencia {
+    width: 50%; /* Ajusta el ancho según tu preferencia */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estructura de cada tarjeta */
+.tarjeta {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* Estilos para la imagen de cada tarjeta */
+.imagen-tarjeta {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 20%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Información de la tarjeta a la derecha de la imagen */
+.info-tarjeta {
+    flex-grow: 1;
+}
+
+.info-tarjeta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-tarjeta p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Aside a la derecha para posts populares */
+.aside-populares {
+    width: 25%; /* Ajusta el ancho del aside */
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aside-populares h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.aside-populares ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside-populares ul li {
+    margin-bottom: 10px;
+}
+
+.aside-populares ul li a {
+    color: #ffa12d;
+    text-decoration: none;
+}
+
+.aside-populares ul li a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    width: 10%;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
