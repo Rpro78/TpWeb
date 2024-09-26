@@ -11,183 +11,407 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
     </style>
 </head>
-<body>
+    <body>
 
-<header>
-    <div class="overlay"></div>
-    <nav>
-        <!-- Logo a la izquierda -->
-        <div class="logo-img">
-            <img src="img/sin fronteras (1).png" alt="">
-        </div>
-        <div class="logo">
-            <span class="sin">Sin</span><span class="fronteras">Fronteras</span>
-        </div>
-        <!-- Barra de búsqueda centrada -->
-        <div class="search-container">
-            <input type="text" placeholder="Search your option">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
-    </nav>
-    <!-- Línea separadora -->
-    <hr>
-    <!-- Categorías debajo de la barra de búsqueda -->
-    <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#destinos">Destinos</a></li>
-        <li><a href="#">Agencias</a></li>
-        <li><a href="#sec_noticias">Noticias</a></li>
-    </ul>
+        <header>
+            <div class="overlay"></div>
+            <nav class="logoYBarra">
+                <!-- Logo a la izquierda -->
+                <div class="imgLogo">
+                    <img src="img/sin fronteras (1).png" alt="">
+                </div>
+                <div class="logo">
+                    <span class="sin">Sin</span><span class="fronteras">Fronteras</span>
+                </div>
+                <!-- Barra de búsqueda centrada -->
+                <div class="barraBuscadora"> 
+                    <input type="text" placeholder="Search your option">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </nav>
+            <!-- Línea separadora -->
+            <hr>
+            <!-- Categorías debajo de la barra de búsqueda -->
+            <ul class="categorias"> 
+                <li><a href="#inicio">Inicio</a></li> 
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#agencias">Agencias</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+            </ul>
 
-    <div class="Encabezado">
-        <h1>Cual sera tu siguiente destino?</h1>
-        <p>Cada rincón del planeta tiene una historia que contar, paisajes que asombrar y culturas que descubrir <p> Elige tu próximo destino y deja que la aventura te sorprenda.</p></p>
-        <button class="boton-seguir">Let's Go...</button>
-    </div>
-</header>
-
-<!-- Section for Destinations -->
-<section id="destinos">
-    <h2>Destinos</h2>
-    <div class="destinos-grid">
-        <a href="#montana"><div class="destino-card" id="montania">Montaña</div></a>
-        <a href="#playa"><div class="destino-card" id="playa">Playa</div></a>
-        <a href="#nieve"><div class="destino-card" id="nieve">Nieve</div></a>
-        <a href="#ciudad"><div class="destino-card" id="ciudad">Ciudad</div></a>
-    </div>
-
-    <!-- Individual Sections for each Destination -->
-    <section>
-        <h3>Montaña</h3>
-        <p>Contenido sobre destinos de montaña.</p>
-    </section>
-
-    <section>
-        <h3>Playa</h3>
-        <p>Contenido sobre destinos de playa.</p>
-    </section>
-
-    <section >
-        <h3>Nieve</h3>
-        <p>Contenido sobre destinos con nieve.</p>
-    </section>
-
-    <section >
-        <h3>Ciudad</h3>
-        <p>Contenido sobre destinos en la ciudad.</p>
-    </section>
-</section>
-
-
-<section class="seccion-noticias" id="sec_noticias">
-    <h2>Noticias</h2>
-    <div class="rejilla-noticias">
-        <div class="tarjeta-noticia">
-            <img src="img/noticia1.jpg" alt="Noticia 1">
-            <div class="contenido-tarjeta">
-                <h3>Escapada: trekking, paseos en canoa y un paisaje de postal a orillas del río Uruguay</h3>
-                <p>El Parque Nacional El Palmar y la Reserva La Aurora del Palmar, dos propuestas para sumergirse en la naturaleza de Entre Ríos</p>
-                <a href="https://www.lanacion.com.ar/salud/escapada-trekking-paseos-en-canoa-y-un-paisaje-de-postal-a-orillas-del-rio-uruguay-nid21092024/" target="_blank">Seguir la noticia...click aca</a>
+            <div class="Encabezado">
+                <h1>Cual sera tu siguiente destino?</h1>
+                <p>Cada rincón del planeta tiene una historia que contar, paisajes que asombrar y culturas que descubrir <p> Elige tu próximo destino y deja que la aventura te sorprenda.</p></p>
+                <button class="botonSeguir">Let's Go...</button> 
             </div>
-        </div>
+        </header>
 
-        <div class="tarjeta-noticia">
-            <img src="img/noticia2.jpg" alt="Noticia 2">
-            <div class="contenido-tarjeta">
-                <h3>Las playas poco conocidas de la Florida, con aires de la Costa Azul, que compiten con Miami</h3>
-                <p>Sobre el golfo de México, en el oeste de Florida, este balneario cultiva un perfil bajo, pero sorprende con arenas finas y un mar tranquilo, cayos, atardeceres únicos, colecciones de arte y mansiones impactantes</p>
-                <a href=""target="_blank" rel="noopener noreferrer">Seguir la noticia...click aca</a>
+
+
+        <!-- Seccion de destinos -->
+        <section id="destinos"> 
+            <h2>Destinos</h2>
+            <div class="destinosGrid">
+                <a href="#DestinosMontania"><div class="tarjetaDestino" id="montania">Montaña</div></a>
+                <a href="#DestinosPlaya"><div class="tarjetaDestino" id="playa">Playa</div></a>
+                <a href="#DestinosNieve"><div class="tarjetaDestino" id="nieve">Nieve</div></a>
+                <a href="#DestinosCiudad"><div class="tarjetaDestino" id="ciudad">Ciudad</div></a>
             </div>
-        </div>
 
-        <div class="tarjeta-noticia">
-            <img src="img/noticia3.jpg" alt="Noticia 3">
-            <div class="contenido-tarjeta">
-                <h3>Cómo el jet lag afecta la salud a largo plazo</h3>
-                <p>Investigadores estudian los efectos de la falta de sueño en el sistema inmunitario; algunos estudios lo han relacionado con la probabilidad de sufrir accidentes coronarios</p>
-                <a href="https://www.lanacion.com.ar/salud/como-afecta-el-jet-lag-a-la-salud-a-largo-plazo-nid20092024/" target="_blank">Seguir la noticia...click aca</a>
+            <section>
+                <h3 id="DestinosMontana">Montaña</h3>
+                <div class="destino">
+                    <h4>1. Patagonia, Argentina/Chile</h4>
+                    <p><strong>Datos interesantes:</strong> La Patagonia es una vasta región compartida entre Argentina y Chile, famosa por sus paisajes espectaculares, que incluyen glaciares, lagos cristalinos, y montañas escarpadas. El Parque Nacional Torres del Paine (Chile) es uno de los destinos más icónicos, con sus torres de granito y fauna como guanacos y pumas. En Argentina, el Monte Fitz Roy ofrece rutas de trekking exigentes rodeadas de una belleza natural impactante.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para amantes del senderismo, la fauna salvaje, y los paisajes solitarios.</p>
+                    <p><strong>Beneficios:</strong> Naturaleza virgen, senderismo épico, avistamiento de fauna.</p>
+                    <p><strong>Contras:</strong> Lejanía y clima impredecible.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>2. Mont Blanc, Chamonix, Francia</h4>
+                    <p><strong>Datos interesantes:</strong> Chamonix es el hogar del Mont Blanc, la montaña más alta de Europa occidental. Esta ciudad alpina es famosa por sus oportunidades de esquí, escalada y senderismo, así como por el teleférico Aiguille du Midi, que lleva a los visitantes a 3.842 metros de altitud. Chamonix fue sede de los primeros Juegos Olímpicos de Invierno en 1924.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para amantes de los deportes de invierno y el alpinismo.</p>
+                    <p><strong>Beneficios:</strong> Excelente infraestructura, vistas impresionantes, actividades variadas.</p>
+                    <p><strong>Contras:</strong> Alto costo y concurrencia en temporada alta.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>3. Banff, Canadá</h4>
+                    <p><strong>Datos interesantes:</strong> El Parque Nacional Banff, en las Montañas Rocosas canadienses, es conocido por sus montañas espectaculares, lagos glaciares (como el famoso Lago Louise), y abundante fauna, que incluye alces, osos y águilas. Banff ofrece actividades durante todo el año, desde esquí en invierno hasta senderismo y kayak en verano.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para los amantes de la naturaleza que buscan una mezcla de actividades al aire libre.</p>
+                    <p><strong>Beneficios:</strong> Belleza natural, variedad de actividades.</p>
+                    <p><strong>Contras:</strong> Multitud en temporada alta.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>4. Machu Picchu, Perú</h4>
+                    <p><strong>Datos interesantes:</strong> Machu Picchu es una de las siete maravillas del mundo moderno, situada en lo alto de los Andes. Esta ciudadela inca es famosa por su arquitectura de piedra, su historia misteriosa, y sus espectaculares vistas de montañas selváticas. Los viajeros pueden llegar a pie a través del Camino Inca o en tren.</p>
+                    <p><strong>Por qué elegirlo:</strong> Un destino histórico y cultural, perfecto para los amantes de la arqueología y la aventura.</p>
+                    <p><strong>Beneficios:</strong> Historia fascinante, paisajes únicos.</p>
+                    <p><strong>Contras:</strong> Altitud elevada y restricciones en el número de visitantes diarios.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>5. Dolomitas, Italia</h4>
+                    <p><strong>Datos interesantes:</strong> Las Dolomitas son una cadena montañosa en el noreste de Italia, conocidas por sus picos irregulares y su impresionante geología. Ofrecen rutas de senderismo y ciclismo en verano, y pistas de esquí en invierno. Son Patrimonio de la Humanidad por la UNESCO, y algunas de las rutas más icónicas incluyen las Tres Cimas de Lavaredo.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan un destino europeo menos concurrido que los Alpes suizos.</p>
+                    <p><strong>Beneficios:</strong> Vistas espectaculares, cultura italiana.</p>
+                    <p><strong>Contras:</strong> Menos popular que otras cadenas montañosas, por lo que puede carecer de grandes resorts.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>6. Kilimanjaro, Tanzania</h4>
+                    <p><strong>Datos interesantes:</strong> El Monte Kilimanjaro es el pico más alto de África y una de las montañas más accesibles del mundo para escalar sin equipo técnico. Ofrece varias rutas de ascenso, cada una con su propio ecosistema, que va desde selvas tropicales hasta campos de hielo en la cima.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan un reto físico y la experiencia única de escalar un pico icónico.</p>
+                    <p><strong>Beneficios:</strong> Desafío físico, diversidad de paisajes.</p>
+                    <p><strong>Contras:</strong> El mal de altura puede ser un riesgo considerable.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>7. Sierra Nevada, España</h4>
+                    <p><strong>Datos interesantes:</strong> La Sierra Nevada es la cadena montañosa más meridional de Europa, famosa por tener las estaciones de esquí más al sur del continente. Ofrece la posibilidad de esquiar y, el mismo día, disfrutar de las playas del Mediterráneo. Además, alberga el pico más alto de la península ibérica, el Mulhacén.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan esquiar en invierno y disfrutar de actividades al aire libre en verano.</p>
+                    <p><strong>Beneficios:</strong> Clima favorable, diversidad de actividades.</p>
+                    <p><strong>Contras:</strong> Menos nieve en años cálidos.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>8. Monte Everest, Nepal</h4>
+                    <p><strong>Datos interesantes:</strong> El Monte Everest es el pico más alto del mundo, ubicado en el Himalaya, en la frontera entre Nepal y China. El trekking al Campo Base del Everest es una experiencia única que ofrece una visión cercana del coloso y una inmersión en la cultura sherpa.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para montañistas avanzados o para quienes buscan una aventura de trekking en las alturas.</p>
+                    <p><strong>Beneficios:</strong> Paisajes espectaculares, aventura extrema.</p>
+                    <p><strong>Contras:</strong> Costoso y riesgoso debido a la altitud y el clima extremo.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>9. Monte Fuji, Japón</h4>
+                    <p><strong>Datos interesantes:</strong> El Monte Fuji es la montaña más alta de Japón y un símbolo icónico del país. Es un volcán activo, aunque con bajo riesgo de erupción, y es considerado sagrado. Muchos peregrinos y turistas lo escalan en verano, disfrutando de las vistas del amanecer desde la cima.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una combinación de desafío físico y experiencia cultural.</p>
+                    <p><strong>Beneficios:</strong> Fácil acceso, espiritualidad y cultura.</p>
+                    <p><strong>Contras:</strong> Puede estar abarrotado en temporada de ascenso.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="DestinosPlaya">Playa</h3>
+                <div class="destino">
+                    <h4>1. Cancún, México</h4>
+                    <p><strong>Datos interesantes:</strong> Cancún, en la península de Yucatán, es uno de los destinos de playa más conocidos del Caribe, con arenas blancas y aguas azul turquesa. Además de las playas, Cancún está cerca de fascinantes ruinas mayas como Chichén Itzá y Tulum, y ofrece vida nocturna vibrante.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan relajación en resorts todo incluido y acceso a sitios culturales.</p>
+                    <p><strong>Beneficios:</strong> Vida nocturna, arqueología, resorts de lujo.</p>
+                    <p><strong>Contras:</strong> Muy turístico y a menudo abarrotado.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>2. Playa del Carmen, México</h4>
+                    <p><strong>Datos interesantes:</strong> Playa del Carmen, situada en la Riviera Maya, es conocida por sus playas de arena blanca y aguas claras. También es un excelente punto de partida para visitar las ruinas mayas de Tulum y los cenotes cercanos. La Quinta Avenida es famosa por su vida nocturna, tiendas y restaurantes.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan un ambiente más relajado que Cancún, pero con accesibilidad a la vida nocturna.</p>
+                    <p><strong>Beneficios:</strong> Diversidad de actividades, ambiente relajado.</p>
+                    <p><strong>Contras:</strong> Puede ser costoso en temporada alta.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>3. Bahamas</h4>
+                    <p><strong>Datos interesantes:</strong> Las Bahamas son un archipiélago en el Caribe famoso por sus aguas cristalinas, playas de arena blanca y vibrantes arrecifes de coral. Nassau, la capital, ofrece una mezcla de cultura, historia y diversión en la playa. Las Bahamas también son conocidas por sus lujosos resorts y su ambiente relajado.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una escapada tropical con opciones de lujo.</p>
+                    <p><strong>Beneficios:</strong> Belleza natural, opciones de entretenimiento.</p>
+                    <p><strong>Contras:</strong> Costoso y puede estar abarrotado en temporada alta.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>4. Ibiza, España</h4>
+                    <p><strong>Datos interesantes:</strong> Ibiza es conocida por su vida nocturna vibrante y sus hermosas playas. Sin embargo, también ofrece tranquilidad y belleza natural en el lado menos conocido de la isla, donde se pueden encontrar calas escondidas y paisajes impresionantes.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan un destino con vida nocturna y relax en la playa.</p>
+                    <p><strong>Beneficios:</strong> Variedad de opciones, cultura festiva.</p>
+                    <p><strong>Contras:</strong> Puede ser costoso y concurrido en verano.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>5. Maldivas</h4>
+                    <p><strong>Datos interesantes:</strong> Las Maldivas son un paraíso tropical compuesto por más de 1,000 islas de coral, conocidas por sus playas de arena blanca, lagunas turquesas y lujosos resorts sobre el agua. Es un destino popular para lunas de miel y escapadas románticas.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una experiencia de lujo en un entorno natural.</p>
+                    <p><strong>Beneficios:</strong> Aislamiento, tranquilidad, paisajes espectaculares.</p>
+                    <p><strong>Contras:</strong> Muy costoso y de difícil acceso.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>6. Phuket, Tailandia</h4>
+                    <p><strong>Datos interesantes:</strong> Phuket es la isla más grande de Tailandia, famosa por sus playas, vida nocturna y cultura. Desde la playa de Patong hasta las calas escondidas, Phuket ofrece una variedad de experiencias, además de ser un punto de partida para explorar otras islas cercanas como las Phi Phi.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan una mezcla de playa, cultura y vida nocturna.</p>
+                    <p><strong>Beneficios:</strong> Variedad de actividades, cultura tailandesa.</p>
+                    <p><strong>Contras:</strong> Puede ser turístico y abarrotado.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>7. Gold Coast, Australia</h4>
+                    <p><strong>Datos interesantes:</strong> La Gold Coast es famosa por sus extensas playas, clima soleado y atracciones turísticas. Es un destino popular para surfistas y amantes de la playa, además de contar con parques temáticos y vida nocturna vibrante.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una escapada de playa activa y emocionante.</p>
+                    <p><strong>Beneficios:</strong> Diversidad de actividades, clima cálido.</p>
+                    <p><strong>Contras:</strong> Puede estar muy concurrido en temporada alta.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>8. Maui, Hawái</h4>
+                    <p><strong>Datos interesantes:</strong> Maui es la segunda isla más grande de Hawái, famosa por sus playas, paisajes volcánicos y cultura hawaiana. El Parque Nacional Haleakalā ofrece impresionantes vistas y oportunidades para ver el amanecer desde la cima de un volcán. Además, las playas de Kaanapali y Wailea son muy populares entre los turistas.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan una mezcla de relax y aventuras al aire libre.</p>
+                    <p><strong>Beneficios:</strong> Belleza natural, actividades variadas.</p>
+                    <p><strong>Contras:</strong> Puede ser costoso y concurrido.</p>
+                </div>
+
+                <div class="destino">
+                    <h4>9. Bora Bora, Polinesia Francesa</h4>
+                    <p><strong>Datos interesantes:</strong> Bora Bora es conocida por sus aguas turquesas, arrecifes de coral y lujosos bungalows sobre el agua. Es un destino popular para lunas de miel y escapadas románticas, y su belleza natural la convierte en una de las islas más fotografiadas del mundo.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para aquellos que buscan un destino de lujo y tranquilidad.</p>
+                    <p><strong>Beneficios:</strong> Aislamiento, hermosos paisajes.</p>
+                    <p><strong>Contras:</strong> Muy costoso y de difícil acceso.</p>
+                </div>
+            </section>
+
+            <section >
+                <h3 id="DestinosNieve">Nieve</h3>
+                <div class="destino">
+                    <h4>1. Aspen, Colorado, EE. UU.</h4>
+                    <p><strong>Datos interesantes:</strong> Aspen es uno de los destinos de esquí más exclusivos de América del Norte, famoso por sus cuatro montañas de esquí. Además de esquiar, Aspen ofrece un ambiente vibrante con tiendas de lujo, restaurantes gourmet y una vida nocturna animada. Este destino ha sido hogar de celebridades y eventos culturales como el Festival de Cine de Aspen.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una experiencia de esquí de alta gama y actividades de après-ski.</p>
+                    <p><strong>Beneficios:</strong> Excelente infraestructura, ambiente elegante.</p>
+                    <p><strong>Contras:</strong> Muy costoso y puede estar abarrotado en temporada alta.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>2. Zermatt, Suiza</h4>
+                    <p><strong>Datos interesantes:</strong> Zermatt es una pintoresca ciudad alpina que se encuentra a los pies del icónico Monte Matterhorn. Este destino es conocido por su esquí de clase mundial, así como por su ambiente libre de coches. Además, ofrece impresionantes rutas de senderismo y una rica historia en el alpinismo.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan un destino de esquí con vistas espectaculares.</p>
+                    <p><strong>Beneficios:</strong> Entorno natural impresionante, cultura alpina.</p>
+                    <p><strong>Contras:</strong> Costos elevados y puede ser difícil de acceder en invierno.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>3. Whistler, Canadá</h4>
+                    <p><strong>Datos interesantes:</strong> Whistler es uno de los destinos de esquí más grandes de América del Norte y fue sede de los Juegos Olímpicos de Invierno en 2010. Ofrece más de 8,000 acres de terreno esquiable, así como una vibrante aldea con tiendas, restaurantes y vida nocturna.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para familias y grupos que buscan una mezcla de esquí y actividades apres-ski.</p>
+                    <p><strong>Beneficios:</strong> Gran variedad de actividades, ambiente animado.</p>
+                    <p><strong>Contras:</strong> Puede estar abarrotado en temporada alta.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>4. Chamonix, Francia</h4>
+                    <p><strong>Datos interesantes:</strong> Chamonix es famosa no solo por sus oportunidades de esquí, sino también por ser un centro de escalada y senderismo. El Mont Blanc, la montaña más alta de Europa, es un ícono en esta región. Chamonix ofrece actividades durante todo el año y un ambiente alpino encantador.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan aventuras tanto en invierno como en verano.</p>
+                    <p><strong>Beneficios:</strong> Gran diversidad de actividades, vistas espectaculares.</p>
+                    <p><strong>Contras:</strong> Puede ser caro y concurrido en temporada alta.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>5. Parque Nacional de Yellowstone, EE. UU.</h4>
+                    <p><strong>Datos interesantes:</strong> Aunque es conocido por sus géiseres y fauna, Yellowstone también ofrece una experiencia única en invierno con oportunidades para practicar esquí de fondo y raquetas de nieve. Las vistas del paisaje nevado son impresionantes, y la fauna invernal es fascinante.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una experiencia invernal en un entorno natural impresionante.</p>
+                    <p><strong>Beneficios:</strong> Belleza natural, diversidad de fauna.</p>
+                    <p><strong>Contras:</strong> Limitadas instalaciones en invierno y puede ser frío extremo.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="DestinosCiudad">Ciudad</h3>
+                <div class="destino">
+                    <h4>1. Nueva York, EE. UU.</h4>
+                    <p><strong>Datos interesantes:</strong> Nueva York es conocida como "La Gran Manzana" y es un destino icónico repleto de cultura, entretenimiento y gastronomía. Desde Times Square hasta Central Park, cada rincón de la ciudad tiene algo especial que ofrecer. Además, es hogar de teatros de Broadway y museos de renombre mundial.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una experiencia urbana vibrante y diversa.</p>
+                    <p><strong>Beneficios:</strong> Variedad de actividades, diversidad cultural.</p>
+                    <p><strong>Contras:</strong> Puede ser caro y abarrotado.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>2. París, Francia</h4>
+                    <p><strong>Datos interesantes:</strong> París es famosa por su arte, moda y gastronomía. La Torre Eiffel, el Louvre y Montmartre son solo algunas de las atracciones que hacen de esta ciudad un destino soñado. Además, la cultura del café y los bistrós parisinos hacen que la experiencia sea única.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan romance, arte y buena comida.</p>
+                    <p><strong>Beneficios:</strong> Encanto histórico, rica cultura.</p>
+                    <p><strong>Contras:</strong> Altos precios y puede estar muy turístico.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>3. Tokio, Japón</h4>
+                    <p><strong>Datos interesantes:</strong> Tokio es una mezcla fascinante de tradición y modernidad, con templos antiguos coexistiendo con rascacielos futuristas. La ciudad ofrece una increíble variedad de experiencias, desde la cultura pop en Akihabara hasta los tranquilos jardines imperiales.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan un destino urbano único con cultura rica.</p>
+                    <p><strong>Beneficios:</strong> Variedad de experiencias, gastronomía excepcional.</p>
+                    <p><strong>Contras:</strong> Puede ser abrumador y complicado de navegar.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>4. Barcelona, España</h4>
+                    <p><strong>Datos interesantes:</strong> Barcelona es famosa por su arquitectura de Gaudí, como la Sagrada Familia y el Parque Güell. Además, ofrece hermosas playas y una vida nocturna vibrante. La mezcla de cultura catalana y mediterránea hace de esta ciudad un lugar especial para visitar.</p>
+                    <p><strong>Por qué elegirlo:</strong> Perfecto para quienes buscan cultura, playa y buena comida.</p>
+                    <p><strong>Beneficios:</strong> Ambiente relajado, rica historia.</p>
+                    <p><strong>Contras:</strong> Puede ser turístico y algo caro en temporada alta.</p>
+                </div>
+            
+                <div class="destino">
+                    <h4>5. Londres, Reino Unido</h4>
+                    <p><strong>Datos interesantes:</strong> Londres es una de las ciudades más influyentes del mundo, famosa por su historia y cultura. Desde el Big Ben y el Palacio de Buckingham hasta el Museo Británico, hay una gran cantidad de atracciones. La diversidad cultural se refleja en la comida, el arte y los eventos que se celebran en la ciudad.</p>
+                    <p><strong>Por qué elegirlo:</strong> Ideal para quienes buscan una experiencia rica en historia y cultura.</p>
+                    <p><strong>Beneficios:</strong> Variedad de actividades, rica historia.</p>
+                    <p><strong>Contras:</strong> Puede ser caro y el clima es a menudo lluvioso.</p>
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <div class="noticiasGrid">
+                <div class="tarjetaNoticia">
+                    <img src="img/noticia1.jpg" alt="Noticia 1">
+                    <div class="contenidoTarjeta">
+                        <h3>Escapada: trekking, paseos en canoa y un paisaje de postal a orillas del río Uruguay</h3>
+                        <p>El Parque Nacional El Palmar y la Reserva La Aurora del Palmar, dos propuestas para sumergirse en la naturaleza de Entre Ríos</p>
+                        <a href="https://www.lanacion.com.ar/salud/escapada-trekking-paseos-en-canoa-y-un-paisaje-de-postal-a-orillas-del-rio-uruguay-nid21092024/" target="_blank">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaNoticia">
+                    <img src="img/noticia2.jpg" alt="Noticia 2">
+                    <div class="contenidoTarjeta">
+                        <h3>Las playas poco conocidas de la Florida, con aires de la Costa Azul, que compiten con Miami</h3>
+                        <p>Sobre el golfo de México, en el oeste de Florida, este balneario cultiva un perfil bajo, pero sorprende con arenas finas y un mar tranquilo, cayos, atardeceres únicos, colecciones de arte y mansiones impactantes</p>
+                        <a href=""target="_blank" rel="noopener noreferrer">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaNoticia">
+                    <img src="img/noticia3.jpg" alt="Noticia 3">
+                    <div class="contenidoTarjeta">
+                        <h3>Cómo el jet lag afecta la salud a largo plazo</h3>
+                        <p>Investigadores estudian los efectos de la falta de sueño en el sistema inmunitario; algunos estudios lo han relacionado con la probabilidad de sufrir accidentes coronarios</p>
+                        <a href="https://www.lanacion.com.ar/salud/como-afecta-el-jet-lag-a-la-salud-a-largo-plazo-nid20092024/" target="_blank">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaNoticia">
+                    <img src="img/noticias4.jpg" alt="Noticia 4">
+                    <div class="contenidoTarjeta">
+                        <h3>El destino exótico con templos increíbles donde se vive con las reglas de los dioses</h3>
+                        <p>Bali es la única isla hinduista de Indonesia, con gastronomía, arquitectura, vestimenta y rituales diferentes a los islámicos del resto del país; con la espiritualidad a flor de piel, un viaje por la selva, el mar y los campos de arroz</p>
+                        <a href="https://www.lanacion.com.ar/salud/el-destino-exotico-con-templos-increibles-donde-se-vive-con-las-reglas-de-los-dioses-nid01092024/" target="_blank">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaNoticia">
+                    <img src="img/noticias5.jpg" alt="Noticia 5">
+                    <div class="contenidoTarjeta">
+                        <h3>Estos 4 pueblos soñados tienen las playas más paradisíacas de Brasil</h3>
+                        <p>A pocos kilómetros de Río de Janeiro, Paraty, Búzios, Angra dos Reis y Arraial do Cabo ofrecen un escape a la vida urbana con arenas más tranquilas, aguas cálidas y morros para caminar sin rumbo</p>
+                        <a href="https://www.lanacion.com.ar/salud/litoral-carioca-las-mejores-playas-y-todo-lo-que-hay-que-saber-para-visitar-esta-zona-nid15092023/" target="_blank">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaNoticia">
+                    <img src="img/noticias6.jpg" alt="Noticia 6">
+                    <div class="contenidoTarjeta">
+                        <h3>Escapada: el pueblo bonaerense que apuesta por la Ruta del Queso para atraer visitantes</h3>
+                        <p>En Suipacha, a 126 kilómetros de Buenos Aires sobre la RN° 5, se visitan dos queserías premium que muestran el proceso productivo y un emprendimiento dedicado al cultivo de arándanos</p>
+                        <a href="https://www.lanacion.com.ar/salud/escapada-el-pueblo-bonaerense-que-apuesta-por-la-ruta-del-queso-para-atraer-visitantes-nid10082024/" target="_blank">Seguir la noticia...click aca</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="tarjeta-noticia">
-            <img src="img/noticias4.jpg" alt="Noticia 4">
-            <div class="contenido-tarjeta">
-                <h3>El destino exótico con templos increíbles donde se vive con las reglas de los dioses</h3>
-                <p>Bali es la única isla hinduista de Indonesia, con gastronomía, arquitectura, vestimenta y rituales diferentes a los islámicos del resto del país; con la espiritualidad a flor de piel, un viaje por la selva, el mar y los campos de arroz</p>
-                <a href="https://www.lanacion.com.ar/salud/el-destino-exotico-con-templos-increibles-donde-se-vive-con-las-reglas-de-los-dioses-nid01092024/" target="_blank">Seguir la noticia...click aca</a>
+
+
+
+
+        <section id="agencias">   
+            <h2>Agencias</h2>
+            <div class="agenciasGrid">  
+                <div class="tarjetaAgencia"> 
+                    <img src="img/agencia1-removebg-preview.png" alt="Imagen 1" class="imagenAgencia"> 
+                    <div class="infoAgencia">   
+                        <h3>Expedia</h3>
+                        <p>Expedia es una agencia de viajes en línea que ofrece una amplia gama de servicios, desde reservas de vuelos y hoteles hasta alquiler de autos y paquetes vacacionales. Su plataforma es fácil de usar, ideal tanto para viajeros frecuentes como para turistas ocasionales.</p>
+                    </div>
+                    <a href="https://www.expedia.com.ar/en/?locale=en_US&siteid=70&semcid=AR.B.GOOGLE.BT-c-EN.GT&semdtl=a118255097082.b1148404691104.g1kwd-12670071.e1c.m1CjwKCAjw6c63BhAiEiwAF0EH1AEh8XWzTee2k0cdgrBVUz8gY9HNwoBi0JFxweOohQwk0KQ2TFrjbxoC-XkQAvD_BwE" target="_blank" class="botonIr"> Ir </a>
+                </div>
+
+                <div class="tarjetaAgencia"> 
+                        <img src="img/agencia2-removebg-preview.png" alt="Imagen 2" class="imagenAgencia">
+                    <div class="infoAgencia">
+                        <h3>Booking.com</h3>
+                        <p>Booking.com es una de las plataformas más populares para reservar alojamiento en todo el mundo. Ofrece una gran variedad de opciones, desde hoteles hasta apartamentos y alojamientos únicos, con un enfoque en facilitar las mejores tarifas.</p>
+                    </div>
+                    <a href="https://www.booking.com/index.es.html?label=gog235jc-1DCAEoggI46AdIM1gDaAyIAQGYAQq4ARfIAQzYAQPoAQGIAgGoAgO4ApqW07cGwAIB0gIkNTZlNzYxY2EtNjI3ZS00ODVlLTg3ODMtZDBkZjJkMmUzZTM02AIE4AIB&sid=be9b7768c445c6504b7759856fa2d705&aid=397594" target="_blank" class="botonIr"> Ir </a>
+                </div>
+
+                <div class="tarjetaAgencia">
+                    <img src="img/agencia3-removebg-preview.png" alt="Imagen 3" class="imagenAgencia">
+                    <div class="infoAgencia">
+                        <h3>Despegar</h3>
+                        <p>Despegar es una de las agencias de viajes en línea más grandes de América Latina. Ofrece una plataforma completa para buscar y reservar vuelos, hoteles, paquetes vacacionales, y otros servicios turísticos.</p>
+                    </div>
+                    <a href="https://www.despegar.com.ar/" target="_blank" class="botonIr"> Ir </a> 
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="tarjeta-noticia">
-            <img src="img/noticias5.jpg" alt="Noticia 5">
-            <div class="contenido-tarjeta">
-                <h3>Estos 4 pueblos soñados tienen las playas más paradisíacas de Brasil</h3>
-                <p>A pocos kilómetros de Río de Janeiro, Paraty, Búzios, Angra dos Reis y Arraial do Cabo ofrecen un escape a la vida urbana con arenas más tranquilas, aguas cálidas y morros para caminar sin rumbo</p>
-                <a href="https://www.lanacion.com.ar/salud/litoral-carioca-las-mejores-playas-y-todo-lo-que-hay-que-saber-para-visitar-esta-zona-nid15092023/" target="_blank">Seguir la noticia...click aca</a>
+
+
+
+
+        <footer>
+            <div class="contenedorFooter">
+                <p>© 2024 SinFronteras Todos los Derechos Reservados</p>
+                <div class="enlacesFooter">
+                    <a href="#">Contacto</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Acerca</a>
+                </div>
             </div>
-        </div>
+        </footer>
+    
 
-        <div class="tarjeta-noticia">
-            <img src="img/noticias6.jpg" alt="Noticia 6">
-            <div class="contenido-tarjeta">
-                <h3>Escapada: el pueblo bonaerense que apuesta por la Ruta del Queso para atraer visitantes</h3>
-                <p>En Suipacha, a 126 kilómetros de Buenos Aires sobre la RN° 5, se visitan dos queserías premium que muestran el proceso productivo y un emprendimiento dedicado al cultivo de arándanos</p>
-                <a href="https://www.lanacion.com.ar/salud/escapada-el-pueblo-bonaerense-que-apuesta-por-la-ruta-del-queso-para-atraer-visitantes-nid10082024/" target="_blank">Seguir la noticia...click aca</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<h2>Agencias</h2>
-<section class="contenido-principal">
-    <div class="tarjetas-agencia">
-        <div class="tarjeta">
-            <img src="img/agencia1-removebg-preview.png" alt="Imagen 1" class="imagen-tarjeta">
-            <div class="info-tarjeta">
-                <h3>Expedia</h3>
-                <p>Expedia es una agencia de viajes en línea que ofrece una amplia gama de servicios, desde reservas de vuelos y hoteles hasta alquiler de autos y paquetes vacacionales. Su plataforma es fácil de usar, ideal tanto para viajeros frecuentes como para turistas ocasionales.</p>
-            </div>
-            <a href="https://www.expedia.com.ar/en/?locale=en_US&siteid=70&semcid=AR.B.GOOGLE.BT-c-EN.GT&semdtl=a118255097082.b1148404691104.g1kwd-12670071.e1c.m1CjwKCAjw6c63BhAiEiwAF0EH1AEh8XWzTee2k0cdgrBVUz8gY9HNwoBi0JFxweOohQwk0KQ2TFrjbxoC-XkQAvD_BwE" target="_blank" class="boton">
-                Ir
-            </a>
-        </div>
-
-        <div class="tarjeta">
-                <img src="img/agencia2-removebg-preview.png" alt="Imagen 2" class="imagen-tarjeta">
-            <div class="info-tarjeta">
-                <h3>Booking.com</h3>
-                <p>Booking.com es una de las plataformas más populares para reservar alojamiento en todo el mundo. Ofrece una gran variedad de opciones, desde hoteles hasta apartamentos y alojamientos únicos, con un enfoque en facilitar las mejores tarifas.</p>
-            </div>
-            <a href="https://www.booking.com/index.es.html?label=gog235jc-1DCAEoggI46AdIM1gDaAyIAQGYAQq4ARfIAQzYAQPoAQGIAgGoAgO4ApqW07cGwAIB0gIkNTZlNzYxY2EtNjI3ZS00ODVlLTg3ODMtZDBkZjJkMmUzZTM02AIE4AIB&sid=be9b7768c445c6504b7759856fa2d705&aid=397594" target="_blank" class="boton">
-                Ir
-            </a>
-        </div>
-
-        <div class="tarjeta">
-            <img src="img/agencia3-removebg-preview.png" alt="Imagen 3" class="imagen-tarjeta">
-            <div class="info-tarjeta">
-                <h3>Despegar</h3>
-                <p>Despegar es una de las agencias de viajes en línea más grandes de América Latina. Ofrece una plataforma completa para buscar y reservar vuelos, hoteles, paquetes vacacionales, y otros servicios turísticos.</p>
-            </div>
-            <a href="https://www.despegar.com.ar/" target="_blank" class="boton">
-                Ir
-            </a>
-        </div>
-    </div>
-
-    <!-- Aside con post populares a la derecha -->
-    <aside class="aside-populares">
-        <h2>Posts populares</h2>
-        <ul>
-            <li><a href="#">Post 1</a></li>
-            <li><a href="#">Post 2</a></li>
-            <li><a href="#">Post 3</a></li>
-            <li><a href="#">Post 4</a></li>
-        </ul>
-    </aside>
-</section>
-
-</body>
+    </body>
 </html>
 
 

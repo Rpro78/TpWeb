@@ -1,3 +1,4 @@
+/*css general*/
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'poppins', sans-serif;
-    background-color: white;
+    background-color: #f8f8f8
 }
 
 header {
@@ -20,12 +21,34 @@ header {
     position: relative;
 }
 
+h1 {
+    margin-bottom: 70px;
+    font-size: 45px;
+    color: #ffefcd;
+}
+
 h2{
     text-align: center;
     color: #333;
     font-size: 30px;
 }
 
+h3 {
+    font-size: 20px;
+    color: #ffa12d;
+}
+
+h4{
+    font-size: 16px;
+    color: #202020;
+}
+
+p{
+    color: #555;
+    font-size: 15px;
+}
+
+/*capa de superposicion*/
 .overlay {
     position: absolute;
     top: 0;
@@ -36,7 +59,9 @@ h2{
     z-index: 1;
 }
 
-nav, .Encabezado, ul.menu {
+
+/* inicio del encabezado*/
+nav, .Encabezado, ul.categorias {
     position: relative;
     z-index: 2;
     color: white;
@@ -47,16 +72,13 @@ nav, .Encabezado, ul.menu {
     margin-top: 100px;
 }
 
-.Encabezado h1 {
-    margin-bottom: 70px;
-    font-size: 50px;
-}
 
 .Encabezado p {
+    color: #ffefcd;
     margin-top: 20px;
 }
 
-.boton-seguir {
+.botonSeguir {
     color: #ffa12d;
     font-weight: bolder;
     margin-top: 50px;
@@ -67,7 +89,7 @@ nav, .Encabezado, ul.menu {
     cursor: pointer;
 }
 
-nav {
+.logoYBarra {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +105,7 @@ nav {
     top: 30px;
 }
 
-.logo-img {
+.imgLogo {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -100,7 +122,7 @@ nav {
 }
 
 /* Barra de búsqueda */
-.search-container {
+.barraBuscadora {
     display: flex;
     align-items: center;
     background-color: white;
@@ -110,7 +132,7 @@ nav {
     margin: auto auto auto 150px;
 }
 
-.search-container input[type="text"] {
+.barraBuscadora input[type="text"] {
     border: none;
     padding: 10px;
     border-radius: 50px;
@@ -119,7 +141,7 @@ nav {
     width: 85%;
 }
 
-.search-container button {
+.barraBuscadora button {
     background: none;
     border: none;
     font-size: 18px;
@@ -127,7 +149,7 @@ nav {
     color: #333;
 }
 
-.search-container button:hover {
+.barraBuscadora button:hover {
     color: green;
 }
 
@@ -139,41 +161,43 @@ hr {
 }
 
 /* Estilo para el menú */
-.menu {
+.categorias {
     list-style-type: none;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 
-.menu li {
+.categorias li {
     margin: 0 100px;
 }
 
-.menu li a {
+.categorias li a {
     color: #ffefcd;
     text-decoration: none;
     font-size: 16px;
 }
 
-.menu li a:hover {
+.categorias li a:hover {
     color: #ffa12d;
 }
+/*fin del encabezado*/
 
 
-/* Destinos grid */
-.destinos-grid {
+
+
+.destinosGrid {
     display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
+    justify-content: center;
+    margin: 20px auto;
     text-decoration: none;
 }
 
-.destinos-grid a{
+.destinosGrid a{
     text-decoration: none;
 }
 
-.destino-card {
+.tarjetaDestino {
     margin-top: 30px;
     width: 200px;
     height: 210px;
@@ -182,77 +206,74 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
     cursor: pointer;
     border-radius: 10px;
 }
 
-/* Individual destination sections */
+
+
+
+/* secciones individuales */
 section {
-    padding: 20px;
-    margin-left: 40px;
+    padding: 30px;
+    margin: 30px;
 }
 
-section h3 {
-    font-size: 25px;
-    color: #ffa12d;
-}
-
-section p {
-    font-size: 18px;
-    color: #333;
-}
-
-.seccion-noticias {
+#noticias {
     padding: 40px;
-    padding-top: 0px;
+    margin: 20px;
     text-align: center;
+    padding-top: 0px;
 }
 
-.rejilla-noticias {
+.noticiasGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
 }
 
-.tarjeta-noticia {
+.tarjetaNoticia {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta-noticia:hover {
+.tarjetaNoticia:hover {
     background-color: #f1f5f7;
 }
 
-.tarjeta-noticia img {
+.tarjetaNoticia img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.contenido-tarjeta {
-    padding: 20px;
+.contenidoTarjeta {
+    padding: 35px;
     text-align: left;
 }
 
-.contenido-tarjeta h3 {
-    font-size: 20px;
+.contenidoTarjeta h3 {
     margin-bottom: 10px;
 }
 
-.contenido-tarjeta p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #555;
+.contenidoTarjeta p {
+    margin: 10px;
 }
 
-.contenido-tarjeta a {
+.contenidoTarjeta a {
     color: #ffa12d;
     text-decoration: none;
     font-weight: 600;
 }
+
+
+
+
+
+
+/*incio de seccion de destinos*/
 
 #montania{
     background-image: url(img/montania.jpg);
@@ -278,26 +299,65 @@ section p {
     background-position: center;
 }
 
-#destinos{
-    margin-top: 50px;
+#destinos {
+    padding: 20px;
 }
 
-.contenido-principal {
+.destinosGrid {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tarjetaDestino {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 10px
+}
+
+.tarjetaDestino:hover {
+    background-color: #45a049;
+}
+
+.destino {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.destino p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/*fin de seccion de destinos*/
+
+
+
+
+/*inicio de seccion de agencia*/
+#agencias {
+    justify-content: center;
+    margin: 20px auto;
 }
 
 /* Columna de tarjetas a la izquierda */
-.tarjetas-agencia {
+.agenciasGrid {
     width: 60%; /* Ajusta el ancho según tu preferencia */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0 auto;
 }
 
 /* Estructura de cada tarjeta */
-.tarjeta {
+.tarjetaAgencia {
     display: flex;
     background-color: #f5f5f5;
     padding: 15px;
@@ -307,7 +367,7 @@ section p {
 }
 
 /* Estilos para la imagen de cada tarjeta */
-.imagen-tarjeta {
+.imagenAgencia {
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -317,57 +377,19 @@ section p {
 }
 
 /* Información de la tarjeta a la derecha de la imagen */
-.info-tarjeta {
+.infoAgencia {
     flex-grow: 1;
 }
 
-.info-tarjeta h3 {
-    font-size: 20px;
+.infoAgencia h3 {
     margin-bottom: 10px;
 }
 
-.info-tarjeta p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Aside a la derecha para posts populares */
-.aside-populares {
-    width: 25%; /* Ajusta el ancho del aside */
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.aside-populares h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.aside-populares ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.aside-populares ul li {
-    margin-bottom: 10px;
-}
-
-.aside-populares ul li a {
-    color: #ffa12d;
-    text-decoration: none;
-}
-
-.aside-populares ul li a:hover {
-    text-decoration: underline;
-}
-
-.boton {
+.botonIr {
     width: 10%;
     display: inline-block;
     padding: 10px 15px;
-    margin-top: 10px;
+    margin: 30px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
@@ -375,6 +397,47 @@ section p {
     transition: background-color 0.3s ease;
 }
 
-.boton:hover {
+.botonIr:hover {
     background-color: #0056b3;
 }
+
+/*fin de seccion de agencia*/
+
+
+
+
+
+/*pie de pagina*/
+
+footer {
+    background-color: #ffa12d; 
+    padding: 20px;
+    text-align: center;
+}
+  
+.contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.contenedorFooter p {
+    margin: 0px;
+}
+  
+.enlacesFooter {
+    display: flex;
+    gap: 20px;
+}
+
+.enlacesFooter a{
+    color: black;
+    text-decoration: none;
+}
+  
+.enlacesFooter a:hover {
+    text-decoration: underline;
+}
+  
