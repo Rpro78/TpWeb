@@ -52,6 +52,10 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: #333;
+}
+
 /*capa de superposicion*/
 .overlay {
     position: absolute;
@@ -412,11 +416,59 @@ footer {
 }
 
 .enlacesFooter a{
-    color: black;
-    text-decoration: none;
+    color: #555;
+    text-decoration: none;  
 }
   
 .enlacesFooter a:hover {
     text-decoration: underline;
 }
-  
+
+/* Estilos para la sección de comentarios */
+#comentarios {
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+#comentarios h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#comentarios textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#comentarios button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffa12d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#comentarios button:hover {
+    background-color: #ff7a00;
+}
+
+#comentarios ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#comentarios li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
