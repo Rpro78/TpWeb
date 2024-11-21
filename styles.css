@@ -425,3 +425,40 @@ footer {
     text-decoration: underline;
 }
   
+/* Estilo general para el carrusel */
+.carousel-item {
+    height: 500px; /* Altura del carrusel */
+    align-items: center; /* Centrado vertical */
+    color: white; /* Texto blanco */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra al texto */
+    position: relative; /* Asegura que los textos se posicionen sobre las imágenes */
+  }
+  
+  
+  .carousel-caption h5 {
+    font-size: 2.5rem; /* Título más grande */
+    font-weight: bold;
+    color: #ffa12d;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+/* Estilo de los indicadores del carrusel */
+.carousel-indicators button {
+  background-color: #fff; /* Indicadores blancos */
+}
+
+.carousel-indicators .active {
+  background-color: #f8b400; /* Color dorado para el indicador activo */
+}
+
+
+.tituloDestinos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
