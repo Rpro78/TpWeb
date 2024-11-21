@@ -241,6 +241,7 @@ section {
 
 .contenidoTarjeta h3 {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .contenidoTarjeta p {
