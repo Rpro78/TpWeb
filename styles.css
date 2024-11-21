@@ -307,9 +307,6 @@ section {
     transition: transform 0.3s ease;
 }
 
-.tarjetaDestino:hover {
-    transform: scale(1.10);
-}
 
 .destino {
     margin-bottom: 20px;
@@ -427,10 +424,12 @@ footer {
   
 /* Estilo general para el carrusel */
 .carousel-item {
-    height: 500px; /* Altura del carrusel */
+    position: relative;
+    background-size: cover;
+    height: 600px; /* Altura del carrusel */
     align-items: center; /* Centrado vertical */
     color: white; /* Texto blanco */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra al texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Sombra al texto */
     position: relative; /* Asegura que los textos se posicionen sobre las imágenes */
   }
   
@@ -461,4 +460,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: black;
+    margin-top: 100px;
 }
