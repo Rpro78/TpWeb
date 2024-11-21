@@ -218,6 +218,11 @@ section {
     transition: transform 0.3s ease;
 }
 
+/* OCULTAR INFORMACION DE LAS NOTIICAS */
+.tarjetaNoticia .contenidoTarjeta p {
+    display: none;
+}
+
 .tarjetaNoticia:hover {
     background-color: #f1f5f7;
     transform: scale(1.08);
